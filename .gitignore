@@ -1,0 +1,58 @@
+# yii console commands
+/yii
+/yii_test
+/yii_test.bat
+/backend/config
+/frontend/config
+/common/config
+
+# phpstorm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/vendor
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+# vagrant runtime
+/.vagrant
+Буде вилучено .bowerrc
+Буде вилучено .gitignore
+Буде вилучено .htaccess
+Буде вилучено LICENSE.md
+Буде вилучено README.md
+Буде вилучено Vagrantfile
+Буде вилучено backend/
+Буде вилучено codeception.yml
+Буде вилучено common/
+Буде вилучено composer.json
+Буде вилучено composer.lock
+Буде вилучено console/
+Буде вилучено environments/
+Буде вилучено frontend/
+Буде вилучено init
+Буде вилучено init.bat
+Буде вилучено requirements.php
+Буде вилучено vagrant/
+Буде вилучено yii.bat
+Буде вилучено "\320\244\320\273\320\260\320\263_Windows_\320\267\320\265\320\273\320\265\320\275\321\213\320\271_\321\204\320\276\320\275.jpg"

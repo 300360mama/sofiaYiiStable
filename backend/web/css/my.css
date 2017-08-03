@@ -1,0 +1,8 @@
+.gallery-image{
+    max-height: 150px;
+    border:1px solid grey;
+}
+
+.gallery-image:hover{
+    cursor: hand;
+}
