@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Html;
 ?>
-<?php var_dump($quantityPage)?>
+
 
 
 <?php if($numberPage>2):?>

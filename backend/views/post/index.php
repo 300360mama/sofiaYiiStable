@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'title',
-            'content:ntext',
+            'content:html',
             'date',
             // 'categoryId',
 

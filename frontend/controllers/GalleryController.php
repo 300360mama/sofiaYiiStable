@@ -30,7 +30,7 @@ class GalleryController extends AppController
         $albumName=GalleryAlbums::find()->where(['albumName'=>$album])->exists()?$album:'';
 
         $listImgs=$this->getImage($albumName);
-        var_dump($this->quantityImgsToPage);
+
         $quantityPage=ceil(count($listImgs)/$this->quantityImgsToPage);
         $images=array_slice($listImgs, $this->quantityImgsToPage*($numberPage-1), $this->quantityImgsToPage);
 

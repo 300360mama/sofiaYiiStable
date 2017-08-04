@@ -26,8 +26,9 @@ $this->params['breadcrumbs'][] = $this->title;
             'content:html',
             'date',
             // 'rating',
-
             ['class' => 'yii\grid\ActionColumn'],
         ],
+
+
     ]); ?>
 </div>

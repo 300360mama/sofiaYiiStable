@@ -6,3 +6,8 @@
 .gallery-image:hover{
     cursor: hand;
 }
+
+#w0 td{
+  white-space: normal;
+
+}
