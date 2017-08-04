@@ -39,6 +39,7 @@ public function init()
 
     public function run()
     {
+
         return $this->render('page', ['albumName'=>$this->albumName,'path'=>$this->getViewPath(),'numberPage'=>$this->numberPage, 'quantityPage'=>$this->quantityPage, 'nextPage'=>$this->nextPage, 'prevPage'=>$this->prevPage]);
     }
 }

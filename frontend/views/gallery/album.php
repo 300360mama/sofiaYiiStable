@@ -12,5 +12,5 @@ use frontend\components\PageWidget;
 
 </div>
 
-<?=PageWidget::widget(['albumName'=>$albumName]); ?>
+<?=PageWidget::widget(['albumName'=>$albumName, 'quantityPage'=>$quantityPage]); ?>
 
