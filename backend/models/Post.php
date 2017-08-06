@@ -50,8 +50,7 @@ class Post extends \yii\db\ActiveRecord
             'id' => 'ID',
             'title' => 'Title',
             'content' => 'Content',
-            'imgpath' => 'Imgpath',
-            'date' => 'Date',
+            //'date' => 'Date',
             'categoryId' => 'Category ID',
         ];
     }

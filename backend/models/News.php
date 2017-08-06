@@ -10,7 +10,6 @@ use Yii;
  * @property integer $id
  * @property string $title
  * @property string $content
- * @property string $imgpath
  * @property string $date
  * @property integer $rating
  *

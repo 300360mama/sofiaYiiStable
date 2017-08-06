@@ -64,6 +64,7 @@ class NewsController extends Controller
     public function actionCreate()
     {
         $model = new News();
+        $model->date=date('Y-m-d H-i-s', time());
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -83,6 +84,7 @@ class NewsController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $model->date=date('Y-m-d H-i-s', time());
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);

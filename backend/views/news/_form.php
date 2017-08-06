@@ -21,7 +21,7 @@ use mihaildev\elfinder\ElFinder;
     ?>
 
 
-    <?= $form->field($model, 'date')->textInput() ?>
+   <!-- --><?/*= $form->field($model, 'date')->textInput() */?>
 
     <?= $form->field($model, 'rating')->textInput() ?>
 

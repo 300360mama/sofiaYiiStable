@@ -8,6 +8,7 @@ use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use backend\models\Postcategory;
 
 /**
  * PostController implements the CRUD actions for Post model.
@@ -64,12 +65,19 @@ class PostController extends Controller
     public function actionCreate()
     {
         $model = new Post();
+        $model->date=date('Y-m-d H-i-s', time());
+        $postCategory=Postcategory::find()->select('id, category')->orderBy('id')->asArray()->all();
+        $category=[];
+        foreach ($postCategory as $value){
+            $category[$value['id']]=$value['category'];
+        }
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
+                'category'=>$category,
             ]);
         }
     }
@@ -83,12 +91,19 @@ class PostController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $model->date=date('Y-m-d H-i-s', time());
+        $postCategory=Postcategory::find()->select('id, category')->orderBy('id')->asArray()->all();
+        $category=[];
+        foreach ($postCategory as $value){
+            $category[$value['id']]=$value['category'];
+        }
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
+                'category'=>$category,
             ]);
         }
     }

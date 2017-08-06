@@ -21,9 +21,9 @@ use mihaildev\elfinder\ElFinder;
     ?>
 
 
-    <?= $form->field($model, 'date')->textInput() ?>
+   <!-- --><?/*= $form->field($model, 'date')->textInput() */?>
 
-    <?= $form->field($model, 'categoryId')->textInput() ?>
+    <?= $form->field($model, 'categoryId')->dropDownList($category) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
