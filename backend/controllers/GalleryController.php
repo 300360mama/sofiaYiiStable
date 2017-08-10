@@ -7,11 +7,27 @@ use backend\controllers\AppController;
 use backend\models\GalleryUpload;
 use yii\web\UploadedFile;
 use backend\models\GalleryAlbums;
+use yii\filters\AccessControl;
 
 class GalleryController extends AppController
 {
 
+    public function behaviors()
+    {
+        return [
 
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+
+                ],
+            ],
+        ];
+    }
 
     public function actionIndex()
 
